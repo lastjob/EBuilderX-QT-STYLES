@@ -1,0 +1,601 @@
+QPushButton:pressed {
+  background-color: rgb(64, 150, 255);
+}
+
+QPushButton[type='primary'] {
+  color: rgb(255, 255, 255);
+  background-color: rgb(22, 119, 255);
+  height: 32px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+QPushButton[type='primary']:hover {
+  background-color: rgb(64, 150, 255);
+}
+
+QPushButton[type='primary']:pressed {
+  background-color: rgba(64, 150, 255, 0.5);
+}
+
+QPushButton[type='default'] {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  height: 32px;
+  border-radius: 6px;
+  border: 1px solid rgb(217, 217, 217);
+  font-size: 14px;
+}
+
+QPushButton[type='default']:hover {
+  border: 1px solid rgb(64, 150, 255);
+  color: rgb(64, 150, 255);
+}
+
+QPushButton[type='default']:pressed {
+  border: 1px solid rgba(64, 150, 255, 0.5);
+  color: rgba(64, 150, 255, 0.5);
+}
+
+QPushButton[type='danger'] {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 77, 79);
+  height: 32px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+QPushButton[type='danger']:hover {
+  background-color: rgb(255, 120, 117);
+}
+
+QPushButton[type='danger']:pressed {
+  background-color: rgba(255, 120, 117, 0.5);
+}
+
+QPushButton[enabled='false'] {
+  background-color: rgb(245, 245, 245);
+  border: 1px solid rgb(217, 217, 217);
+  color: rgb(208, 208, 208);
+}
+
+QLineEdit {
+  border: 1px solid rgb(203, 210, 220);
+  height: 30px;
+  font-size: 14px;
+  border-radius: 6px;
+  padding: 0 5px;
+}
+
+QLineEdit:focus {
+  border: 1px solid rgb(64, 150, 255);
+}
+
+QLineEdit:hover {
+  border: 1px solid rgb(64, 150, 255);
+}
+
+QLineEdit[enabled='false'] {
+  background-color: rgb(245, 245, 245);
+  border: 1px solid rgb(217, 217, 217);
+  color: rgb(208, 208, 208);
+}
+
+QLineEdit[readOnly='true'] {
+  background-color: rgb(245, 245, 245);
+  border: 1px solid rgb(217, 217, 217);
+  color: rgb(208, 208, 208);
+}
+
+QSpinBox {
+  border: 1px solid rgb(203, 210, 220);
+  height: 30px;
+  font-size: 14px;
+  border-radius: 6px;
+  padding: 0 5px;
+}
+
+QSpinBox:focus {
+  border: 1px solid rgb(64, 150, 255);
+}
+
+QSpinBox[readOnly='false']:hover {
+  border: 1px solid rgb(64, 150, 255);
+}
+
+QSpinBox::up-button {
+  subcontrol-origin: border;
+  subcontrol-position: top right;
+
+  width: 16px;
+  border-left: 1px solid rgb(217, 217, 217);
+  border-bottom: 1px solid rgb(217, 217, 217);
+}
+
+QSpinBox[readOnly='false']::up-button:hover {
+  border-left: 1px solid rgb(64, 150, 255);
+  border-bottom: 1px solid rgb(64, 150, 255);
+}
+
+QSpinBox::up-arrow {
+  image: url(:/imgs/spin-arrow-up.png);
+  width: 8px;
+  height: 8px;
+}
+
+QSpinBox[readOnly='false']::up-arrow::hover {
+  image: url(:/imgs/spin-arrow-up-active.png);
+}
+
+QSpinBox::down-button {
+  subcontrol-origin: border;
+  subcontrol-position: bottom right;
+
+  width: 16px;
+  border-left: 1px solid rgb(217, 217, 217);
+  border-top: 1px solid rgb(217, 217, 217);
+}
+
+QSpinBox[readOnly='false']::down-button:hover {
+  border-left: 1px solid rgb(64, 150, 255);
+  border-top: 1px solid rgb(64, 150, 255);
+}
+
+QSpinBox::down-arrow {
+  image: url(:/imgs/spin-arrow-down.png);
+  width: 8px;
+  height: 8px;
+}
+
+QSpinBox[readOnly='false']::down-arrow::hover {
+  image: url(:/imgs/spin-arrow-down-active.png);
+}
+
+QSpinBox[enabled='false'] {
+  background-color: rgb(245, 245, 245);
+  border: 1px solid rgb(217, 217, 217);
+  color: rgb(208, 208, 208);
+}
+
+QSpinBox[readOnly='true'] {
+  background-color: rgb(245, 245, 245);
+  border: 1px solid rgb(217, 217, 217);
+  color: rgb(208, 208, 208);
+}
+
+QDoubleSpinBox {
+  border: 1px solid rgb(203, 210, 220);
+  height: 30px;
+  font-size: 14px;
+  border-radius: 6px;
+  padding: 0 5px;
+}
+
+QDoubleSpinBox:focus {
+  border: 1px solid rgb(64, 150, 255);
+}
+
+QDoubleSpinBox[readOnly='false']:hover {
+  border: 1px solid rgb(64, 150, 255);
+}
+
+QDoubleSpinBox::up-button {
+  subcontrol-origin: border;
+  subcontrol-position: top right;
+
+  width: 16px;
+  border-left: 1px solid rgb(217, 217, 217);
+  border-bottom: 1px solid rgb(217, 217, 217);
+}
+
+QDoubleSpinBox[readOnly='false']::up-button:hover {
+  border-left: 1px solid rgb(64, 150, 255);
+  border-bottom: 1px solid rgb(64, 150, 255);
+}
+
+QDoubleSpinBox::up-arrow {
+  image: url(:/imgs/spin-arrow-up.png);
+  width: 8px;
+  height: 8px;
+}
+
+QDoubleSpinBox[readOnly='false']::up-arrow::hover {
+  image: url(:/imgs/spin-arrow-up-active.png);
+}
+
+QDoubleSpinBox::down-button {
+  subcontrol-origin: border;
+  subcontrol-position: bottom right;
+
+  width: 16px;
+  border-left: 1px solid rgb(217, 217, 217);
+  border-top: 1px solid rgb(217, 217, 217);
+}
+
+QDoubleSpinBox[readOnly='false']::down-button:hover {
+  border-left: 1px solid rgb(64, 150, 255);
+  border-top: 1px solid rgb(64, 150, 255);
+}
+
+QDoubleSpinBox::down-arrow {
+  image: url(:/imgs/spin-arrow-down.png);
+  width: 8px;
+  height: 8px;
+}
+
+QDoubleSpinBox[readOnly='false']::down-arrow::hover {
+  image: url(:/imgs/spin-arrow-down-active.png);
+}
+
+QDoubleSpinBox[enabled='false'] {
+  background-color: rgb(245, 245, 245);
+  border: 1px solid rgb(217, 217, 217);
+  color: rgb(208, 208, 208);
+}
+
+QDoubleSpinBox[readOnly='true'] {
+  background-color: rgb(245, 245, 245);
+  border: 1px solid rgb(217, 217, 217);
+  color: rgb(208, 208, 208);
+}
+
+QComboBox {
+  border: 1px solid rgb(203, 210, 220);
+  height: 30px;
+  font-size: 14px;
+  border-radius: 6px;
+  padding: 0 5px;
+}
+
+QComboBox:focus {
+  border: 1px solid rgb(64, 150, 255);
+}
+
+QComboBox:hover {
+  border: 1px solid rgb(64, 150, 255);
+}
+
+QComboBox::drop-down {
+  subcontrol-origin: padding;
+  subcontrol-position: top right;
+  width: 15px;
+  border-left-width: 0px;
+}
+
+QComboBox::down-arrow {
+  image: url(:/imgs/arrow-down.png);
+  width: 12px;
+  height: 12px;
+}
+
+QListView::item {
+  height: 30px;
+}
+
+QComboBox[enabled='false'] {
+  background-color: rgb(245, 245, 245);
+  border: 1px solid rgb(217, 217, 217);
+  color: rgb(208, 208, 208);
+}
+
+QLabel {
+  font-size: 14px;
+}
+
+QDateEdit {
+  border: 1px solid rgb(203, 210, 220);
+  height: 30px;
+  font-size: 14px;
+  border-radius: 6px;
+  padding: 0 5px;
+}
+
+QDateEdit:focus {
+  border: 1px solid rgb(64, 150, 255);
+}
+
+QDateEdit[readOnly='false']:hover {
+  border: 1px solid rgb(64, 150, 255);
+}
+
+QDateEdit::up-button {
+  subcontrol-origin: border;
+  subcontrol-position: top right;
+
+  width: 16px;
+  border-left: 1px solid rgb(217, 217, 217);
+  border-bottom: 1px solid rgb(217, 217, 217);
+}
+
+QDateEdit[readOnly='false']::up-button:hover {
+  border-left: 1px solid rgb(64, 150, 255);
+  border-bottom: 1px solid rgb(64, 150, 255);
+}
+
+QDateEdit::up-arrow {
+  image: url(:/imgs/spin-arrow-up.png);
+  width: 8px;
+  height: 8px;
+}
+
+QDateEdit[readOnly='false']::up-arrow::hover {
+  image: url(:/imgs/spin-arrow-up-active.png);
+}
+
+QDateEdit::down-button {
+  subcontrol-origin: border;
+  subcontrol-position: bottom right;
+
+  width: 16px;
+  border-left: 1px solid rgb(217, 217, 217);
+  border-top: 1px solid rgb(217, 217, 217);
+}
+
+QDateEdit[readOnly='false']::down-button:hover {
+  border-left: 1px solid rgb(64, 150, 255);
+  border-top: 1px solid rgb(64, 150, 255);
+}
+
+QDateEdit::down-arrow {
+  image: url(:/imgs/spin-arrow-down.png);
+  width: 8px;
+  height: 8px;
+}
+
+QDateEdit[readOnly='false']::down-arrow::hover {
+  image: url(:/imgs/spin-arrow-down-active.png);
+}
+
+QDateEdit[enabled='false'] {
+  background-color: rgb(245, 245, 245);
+  border: 1px solid rgb(217, 217, 217);
+  color: rgb(208, 208, 208);
+}
+
+QDateEdit[readOnly='true'] {
+  background-color: rgb(245, 245, 245);
+  border: 1px solid rgb(217, 217, 217);
+  color: rgb(208, 208, 208);
+}
+
+QDateTimeEdit {
+  border: 1px solid rgb(203, 210, 220);
+  height: 30px;
+  font-size: 14px;
+  border-radius: 6px;
+  padding: 0 5px;
+}
+
+QDateTimeEdit:focus {
+  border: 1px solid rgb(64, 150, 255);
+}
+
+QDateTimeEdit[readOnly='false']:hover {
+  border: 1px solid rgb(64, 150, 255);
+}
+
+QDateTimeEdit::up-button {
+  subcontrol-origin: border;
+  subcontrol-position: top right;
+
+  width: 16px;
+  border-left: 1px solid rgb(217, 217, 217);
+  border-bottom: 1px solid rgb(217, 217, 217);
+}
+
+QDateTimeEdit[readOnly='false']::up-button:hover {
+  border-left: 1px solid rgb(64, 150, 255);
+  border-bottom: 1px solid rgb(64, 150, 255);
+}
+
+QDateTimeEdit::up-arrow {
+  image: url(:/imgs/spin-arrow-up.png);
+  width: 8px;
+  height: 8px;
+}
+
+QDateTimeEdit[readOnly='false']::up-arrow::hover {
+  image: url(:/imgs/spin-arrow-up-active.png);
+}
+
+QDateTimeEdit::down-button {
+  subcontrol-origin: border;
+  subcontrol-position: bottom right;
+
+  width: 16px;
+  border-left: 1px solid rgb(217, 217, 217);
+  border-top: 1px solid rgb(217, 217, 217);
+}
+
+QDateTimeEdit[readOnly='false']::down-button:hover {
+  border-left: 1px solid rgb(64, 150, 255);
+  border-top: 1px solid rgb(64, 150, 255);
+}
+
+QDateTimeEdit::down-arrow {
+  image: url(:/imgs/spin-arrow-down.png);
+  width: 8px;
+  height: 8px;
+}
+
+QDateTimeEdit[readOnly='false']::down-arrow::hover {
+  image: url(:/imgs/spin-arrow-down-active.png);
+}
+
+QDateTimeEdit[enabled='false'] {
+  background-color: rgb(245, 245, 245);
+  border: 1px solid rgb(217, 217, 217);
+  color: rgb(208, 208, 208);
+}
+
+QDateTimeEdit[readOnly='true'] {
+  background-color: rgb(245, 245, 245);
+  border: 1px solid rgb(217, 217, 217);
+  color: rgb(208, 208, 208);
+}
+
+QTimeEdit {
+  border: 1px solid rgb(203, 210, 220);
+  height: 30px;
+  font-size: 14px;
+  border-radius: 6px;
+  padding: 0 5px;
+}
+
+QTimeEdit:focus {
+  border: 1px solid rgb(64, 150, 255);
+}
+
+QTimeEdit[readOnly='false']:hover {
+  border: 1px solid rgb(64, 150, 255);
+}
+
+QTimeEdit::up-button {
+  subcontrol-origin: border;
+  subcontrol-position: top right;
+
+  width: 16px;
+  border-left: 1px solid rgb(217, 217, 217);
+  border-bottom: 1px solid rgb(217, 217, 217);
+}
+
+QTimeEdit[readOnly='false']::up-button:hover {
+  border-left: 1px solid rgb(64, 150, 255);
+  border-bottom: 1px solid rgb(64, 150, 255);
+}
+
+QTimeEdit::up-arrow {
+  image: url(:/imgs/spin-arrow-up.png);
+  width: 8px;
+  height: 8px;
+}
+
+QTimeEdit[readOnly='false']::up-arrow::hover {
+  image: url(:/imgs/spin-arrow-up-active.png);
+}
+
+QTimeEdit::down-button {
+  subcontrol-origin: border;
+  subcontrol-position: bottom right;
+
+  width: 16px;
+  border-left: 1px solid rgb(217, 217, 217);
+  border-top: 1px solid rgb(217, 217, 217);
+}
+
+QTimeEdit[readOnly='false']::down-button:hover {
+  border-left: 1px solid rgb(64, 150, 255);
+  border-top: 1px solid rgb(64, 150, 255);
+}
+
+QTimeEdit::down-arrow {
+  image: url(:/imgs/spin-arrow-down.png);
+  width: 8px;
+  height: 8px;
+}
+
+QTimeEdit[readOnly='false']::down-arrow::hover {
+  image: url(:/imgs/spin-arrow-down-active.png);
+}
+
+QTimeEdit[enabled='false'] {
+  background-color: rgb(245, 245, 245);
+  border: 1px solid rgb(217, 217, 217);
+  color: rgb(208, 208, 208);
+}
+
+QTimeEdit[readOnly='true'] {
+  background-color: rgb(245, 245, 245);
+  border: 1px solid rgb(217, 217, 217);
+  color: rgb(208, 208, 208);
+}
+
+QCheckBox {
+  font-size: 14px;
+}
+
+QCheckBox[checkable='true']::indicator {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgb(217, 217, 217);
+  background-color: rgb(255, 255, 255);
+  border-radius: 6px;
+}
+
+QCheckBox[checkable='true']::indicator:checked {
+  background-color: rgb(22, 119, 255);
+  image: url(:/imgs/checked.png);
+}
+
+QCheckBox[checkable='true']::indicator:hover {
+  border: 1px solid rgb(64, 150, 255);
+}
+
+QCheckBox[checkable='false'] {
+  font-size: 14px;
+  color: rgb(208, 208, 208);
+}
+
+QCheckBox[checkable='false']::indicator {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgb(217, 217, 217);
+  background-color: rgb(245, 245, 245);
+  border-radius: 6px;
+}
+
+QRadioButton {
+  font-size: 14px;
+}
+
+QRadioButton[checkable='true']::indicator {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgb(217, 217, 217);
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+}
+
+QRadioButton[checkable='true']::indicator:checked {
+  background-color: rgb(22, 119, 255);
+  image: url(:/imgs/radio_checked.png);
+}
+
+QRadioButton[checkable='true']::indicator:hover {
+  border: 1px solid rgb(64, 150, 255);
+}
+
+QRadioButton[checkable='false'] {
+  font-size: 14px;
+  color: rgb(208, 208, 208);
+}
+
+QRadioButton[checkable='false']::indicator {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgb(217, 217, 217);
+  background-color: rgb(245, 245, 245);
+  border-radius: 8px;
+}
+
+QTabBar::tab {
+  height: 32px;
+  font-size: 14px;
+  background-color: rgb(255, 255, 255);
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+QTabBar::tab:selected {
+  color: rgb(64, 150, 255);
+  border-bottom: 1px solid rgb(64, 150, 255);
+}
+
+QTabBar::tab:!selected:hover {
+  color: rgb(64, 150, 255);
+}
+
+QTabBar::tab:disabled {
+  background-color: rgb(245, 245, 245);
+  color: rgb(208, 208, 208);
+}
