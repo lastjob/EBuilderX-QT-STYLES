@@ -10,4 +10,4 @@ ui->btnDanger->setProperty("type", "danger");
 ui->btnDisabled->setProperty("type", "primary");
 ```
 
-![](C:\Users\patch\Documents\codes\EBuilderX-QT-STYLES\20240313200744.png)
+![](20240313200744.png)
